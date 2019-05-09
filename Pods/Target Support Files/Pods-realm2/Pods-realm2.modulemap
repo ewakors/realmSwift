@@ -1,0 +1,6 @@
+framework module Pods_realm2 {
+  umbrella header "Pods-realm2-umbrella.h"
+
+  export *
+  module * { export * }
+}
