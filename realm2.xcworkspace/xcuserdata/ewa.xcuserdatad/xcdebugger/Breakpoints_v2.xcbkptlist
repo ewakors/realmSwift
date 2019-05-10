@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "realm2/ProjectsViewController.swift"
-            timestampString = "579130804.8816971"
+            timestampString = "579132456.5148391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "init(nibName:bundle:)"
             landmarkType = "7">
          </BreakpointContent>

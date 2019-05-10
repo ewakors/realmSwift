@@ -17,6 +17,8 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
     let reindeerItem: Results<reindeer2>
     let addressItem: Results<address>
     let areaItem: Results<area>
+    let giftItem: Results<gift>
+    let childrenItem: Results<children1>
 
     var notificationToken: NotificationToken?
     var tableView = UITableView()
@@ -30,7 +32,10 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
         self.reindeerItem = realm.objects(reindeer2.self)
         self.addressItem = realm.objects(address.self)
         self.areaItem = realm.objects(area.self)
-
+        self.giftItem = realm.objects(gift.self)
+        self.childrenItem = realm.objects(children1.self)
+//        SELECT g.name, c.name FROM gift g, children c where c.id = g.id_children and c.id = 4683
+        
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -58,6 +63,9 @@ class ProjectsViewController: UIViewController, UITableViewDelegate, UITableView
         print("reindeer: \(reindeerItem)")
         print("address: \(addressItem)")
         print("area: \(areaItem)")
+        print("gift: \(giftItem)")
+        print("children: \(childrenItem)")
+
 //        notificationToken = elfItem.observe { [weak self] (changes) in
 //            guard let tableView = self?.tableView else { return }
 //

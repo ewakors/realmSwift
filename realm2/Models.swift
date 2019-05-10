@@ -56,3 +56,43 @@ class area: Object {
         return "id"
     }
 }
+class gift: Object {
+    @objc dynamic var id = 0
+    @objc dynamic var name: String = ""
+    @objc dynamic var company_name: String = ""
+    @objc dynamic var is_given: Bool = false
+    @objc dynamic var give_date: Int = 0
+    @objc dynamic var weight: Float = 0.0
+    let id_address = RealmOptional<Int>()
+    let id_children = RealmOptional<Int>()
+
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+}
+class gift3: Object {
+    @objc dynamic var id = 0
+    @objc dynamic var name: String = ""
+    @objc dynamic var company_name: String = ""
+    let is_given = RealmOptional<Bool>()
+    @objc dynamic var give_date: Int = 0
+    @objc dynamic var weight: Float = 0.0
+    let id_address = RealmOptional<Int>()
+    let id_children = RealmOptional<Int>()
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+}
+class children1: Object {
+    @objc dynamic var id = 0
+    @objc dynamic var name: String = ""
+    @objc dynamic var surname: String = ""
+    @objc dynamic var age: Int = 0
+    @objc dynamic var gender: String = ""
+    let id_gift = RealmOptional<Int>()
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+}
