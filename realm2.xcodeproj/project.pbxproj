@@ -16,6 +16,7 @@
 		C6207BA8228357D700DA31B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6207BA6228357D700DA31B2 /* LaunchScreen.storyboard */; };
 		C6207BB022835A2D00DA31B2 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6207BAF22835A2D00DA31B2 /* ProjectsViewController.swift */; };
 		C6207BB222835A3D00DA31B2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6207BB122835A3D00DA31B2 /* Constant.swift */; };
+		C6301EB922860F420095E338 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6301EB822860F420095E338 /* Stopwatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C6207BA9228357D700DA31B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6207BAF22835A2D00DA31B2 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		C6207BB122835A3D00DA31B2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C6301EB822860F420095E338 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		CDFD7C5F6C07931B5759B691 /* Pods_realm2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realm2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01461A4F765D75755F76D8F /* Pods-realm2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realm2.release.xcconfig"; path = "Pods/Target Support Files/Pods-realm2/Pods-realm2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				C6207BAF22835A2D00DA31B2 /* ProjectsViewController.swift */,
 				C6207BB122835A3D00DA31B2 /* Constant.swift */,
 				C61F593B2284D42A00155B3E /* Models.swift */,
+				C6301EB822860F420095E338 /* Stopwatch.swift */,
 			);
 			path = realm2;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6207BB022835A2D00DA31B2 /* ProjectsViewController.swift in Sources */,
+				C6301EB922860F420095E338 /* Stopwatch.swift in Sources */,
 				C6207BA0228357D400DA31B2 /* ViewController.swift in Sources */,
 				C6207B9E228357D400DA31B2 /* AppDelegate.swift in Sources */,
 				C6207BB222835A3D00DA31B2 /* Constant.swift in Sources */,

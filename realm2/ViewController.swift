@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         title = "Welcome"
         
         if let _ = SyncUser.current {
-            // We have already logged in here!
-            self.navigationController?.pushViewController(ProjectsViewController(), animated: false)
+            let next = self.storyboard?.instantiateViewController(withIdentifier: "ProjectsViewController") as! ProjectsViewController
+            self.present(next, animated: true, completion: nil)
         } else {
             let alertController = UIAlertController(title: "Login to Realm Cloud", message: "Supply a nice nickname!", preferredStyle: .alert)
             
