@@ -65,28 +65,16 @@ class ProjectsViewController: UIViewController {
                 print("FileManager Error: \(error)")
             }
         }
-      
-     
-//        let newSanta = santa()
-//        newSanta.id = 2
-//        newSanta.name = "santa22"
-//        try! realm.write {
-//            realm.add(newSanta)
-//        }
         
         
-        //        for i in 0..<addressItem.count {
-        //            let string = addressItem[i].street
-        //            let needle = "24"
-        //            let needle2 = "44"
-        //
-        //            if string.contains(needle) || string.contains(needle2) {
-        //                try! realm.write {
-        //                    print("elf: \(addressItem[i].street) ")
-        //                    //elfItem[i].reaindeer.append(reindeerItem[j])
-        //                }
-        //            }
+        //        let newSanta = santa()
+        //        newSanta.id = 2
+        //        newSanta.name = "santa22"
+        //        try! realm.write {
+        //            realm.add(newSanta)
         //        }
+        
+
         
         //        for i in 0..<elfItem.count {
         //            for j  in 0..<reindeerItem.count {
@@ -119,78 +107,79 @@ class ProjectsViewController: UIViewController {
         addressItem = realm.objects(address.self)
         childrenItem = realm.objects(children1.self)
         santaItems = realm.objects(santa.self)
+        
         //select from gift
         let s = Stopwatch()
         giftItem = realm.objects(gift.self)
         print("\(s.elapsedTimeString())")
-
-       //add new children
-//        let s = Stopwatch()
-//        let newGift = gift()
-//        newGift.id = 564
-//        let newChildren = children1()
-//        newChildren.id = 25001
-//        newChildren.name = "Ania"
-//        newChildren.surname = "Kowalska"
-//        newChildren.age = 18
-//        newChildren.gender = "female"
-//        newChildren.gift.append(newGift)
-//        try! realm.write {
-//            realm.add(newChildren)
-//        }
-//        print("\(s.elapsedTimeString())")
-
+        
+        //add new children
+        //        let s = Stopwatch()
+        //        let newGift = gift()
+        //        newGift.id = 564
+        //        let newChildren = children1()
+        //        newChildren.id = 25001
+        //        newChildren.name = "Ania"
+        //        newChildren.surname = "Kowalska"
+        //        newChildren.age = 18
+        //        newChildren.gender = "female"
+        //        newChildren.gift.append(newGift)
+        //        try! realm.write {
+        //            realm.add(newChildren)
+        //        }
+        //        print("\(s.elapsedTimeString())")
+        
         //add new reindeer
-//        let s = Stopwatch()
-//        let newReinder = reindeer2()
-//        newReinder.id = 2001
-//        newReinder.name = "Elfik"
-//        newReinder.id_elf.value = 23
-//        newReinder.id_santa.value = 1
-//        try! realm.write {
-//            realm.add(newReinder)
-//        }
-//        print("\(s.elapsedTimeString())")
-
+        //        let s = Stopwatch()
+        //        let newReinder = reindeer2()
+        //        newReinder.id = 2001
+        //        newReinder.name = "Elfik"
+        //        newReinder.id_elf.value = 23
+        //        newReinder.id_santa.value = 1
+        //        try! realm.write {
+        //            realm.add(newReinder)
+        //        }
+        //        print("\(s.elapsedTimeString())")
+        
         //add new gift
         //        let s = Stopwatch()
-//        let newGift = gift()
-//        newGift.id = 30001
-//        newGift.name = "lalka"
-//        newGift.company_name = "barbie"
-//        newGift.is_given = false
-//        newGift.give_date = 1388010342
-//        newGift.weight = 3.4
-//        newGift.id_children.value = 2345
-//        newGift.id_address.value = 54
+        //        let newGift = gift()
+        //        newGift.id = 30001
+        //        newGift.name = "lalka"
+        //        newGift.company_name = "barbie"
+        //        newGift.is_given = false
+        //        newGift.give_date = 1388010342
+        //        newGift.weight = 3.4
+        //        newGift.id_children.value = 2345
+        //        newGift.id_address.value = 54
         //        try! realm.write {
         //            realm.add(newGift)
         //        }
         //        print("\(s.elapsedTimeString())")
-
+        
         //select name, company_name, is_given from gift where id= 2678
-//        let s = Stopwatch()
-//        giftItem = realm.objects(gift.self).filter("id=2678")
-//        print("\(s.elapsedTimeString())")
-        
-//        select from gift where id_address = 240 && id_children = 16513
         //        let s = Stopwatch()
-//                giftItem = realm.objects(gift.self).filter("id_address=240 AND id_children = 16513")
-        //        print("\(s.elapsedTimeString())")
-
-//        SELECT * FROM gift where is_given = FALSE || give_date = 1387948873
-        //        let s = Stopwatch()
-//                        giftItem = realm.objects(gift.self).filter("is_given = false OR give_date = 1387948873")
+        //        giftItem = realm.objects(gift.self).filter("id=2678")
         //        print("\(s.elapsedTimeString())")
         
-//        SELECT * FROM gift where is_given = \"TRUE\" and give_date = 1387948873 and id_address = 8400 and id_children = 13581
+        //        select from gift where id_address = 240 && id_children = 16513
         //        let s = Stopwatch()
-//                                giftItem = realm.objects(gift.self).filter("is_given = true and give_date = 1387948873 and id_address = 8400 and id_children = 13581")
+        //                giftItem = realm.objects(gift.self).filter("id_address=240 AND id_children = 16513")
         //        print("\(s.elapsedTimeString())")
         
-//        SELECT g.name, c.name FROM gift g, children c where c.id = g.id_children and c.id = 4683
+        //        SELECT * FROM gift where is_given = FALSE || give_date = 1387948873
         //        let s = Stopwatch()
-//                                        childrenItem = realm.objects(children.self).filter("id = 4683 and gift.id_children = 4683")
+        //                        giftItem = realm.objects(gift.self).filter("is_given = false OR give_date = 1387948873")
+        //        print("\(s.elapsedTimeString())")
+        
+        //        SELECT * FROM gift where is_given = \"TRUE\" and give_date = 1387948873 and id_address = 8400 and id_children = 13581
+        //        let s = Stopwatch()
+        //                                giftItem = realm.objects(gift.self).filter("is_given = true and give_date = 1387948873 and id_address = 8400 and id_children = 13581")
+        //        print("\(s.elapsedTimeString())")
+        
+        //        SELECT g.name, c.name FROM gift g, children c where c.id = g.id_children and c.id = 4683
+        //        let s = Stopwatch()
+        //                                        childrenItem = realm.objects(children.self).filter("id = 4683 and gift.id_children = 4683")
         //        print("\(s.elapsedTimeString())")
         
         //        let s = Stopwatch()
@@ -207,27 +196,98 @@ class ProjectsViewController: UIViewController {
         //            }
         //        }
         //        print("\(s.elapsedTimeString())")
+        
+        //        UPDATE gift SET name = 'barbie' WHERE id = 1432;
+        //        let s = Stopwatch()
+//        let giftUpdate = realm.objects(gift.self).filter("id=1432").first
+//        try! realm.write {
+//            giftUpdate?.name = "barbie"
+//        }
+        //        print("\(s.elapsedTimeString())")
 
-        for i in 0..<addressItem.count {
-            for j  in 0..<giftItem.count {
-                if addressItem[i].id == giftItem[j].id_address.value {
-                    try! realm.write {
-                        //                                print("elf: \(elfItem[i].name) \(reindeerItem[j].name)")
-                        addressItem[i].gift.append(giftItem[j])
-                    }
-                }
-            }
-        }
-//        for i in 0..<childrenItem.count {
+//        UPDATE gift SET name = 'barbie' WHERE is_given = \"FALSE\" and weight < 2;
+//                let giftUpdate = realm.objects(gift.self).filter("is_given = false AND weight < 2")
+        //        let s = Stopwatch()
+//        for i in 0..<giftUpdate.count {
+//            try! realm.write {
+//                giftUpdate[i].name = "barbie22"
+//            }
+//            print("\(s.elapsedTimeString())")
+//        }
+        
+//        UPDATE address SET city = 'Toledo' WHERE id_area = 32 and (street like \"%24%\" or street like \"%44%\");
+//        let address1Update = realm.objects(address.self).filter("id_area = 32")
+        //        let s = Stopwatch()
+        //        for i in 0..<addressItem.count {
+        //            let string = address1Update[i].street
+        //            let needle = "24"
+        //            let needle2 = "44"
+        //
+        //            if string.contains(needle) || string.contains(needle2) {
+        //                try! realm.write {
+//        address1Update[i].city = "Toledo"
+        //            print("\(s.elapsedTimeString())")
+
+        //                    print("elf: \(address1Update[i].street) ")
+        //                }
+        //            }
+        //        }
+        
+//        "DELETE FROM gift where is_given = \"TRUE\""
+//        let giftDelete = realm.objects(gift.self).filter("is_given = true")
+        //        let s = Stopwatch()
+//        for i in 0..<giftDelete.count {
+//            try! realm.write {
+//                realm.delete(giftDelete[i])
+//            }
+            //            print("\(s.elapsedTimeString())")
+
+//        }
+        
+//        DELETE FROM children where age >= 17"
+//        let deleteChildren = realm.objects(children1.self).filter("age >= 17")
+//        let s = Stopwatch()
+//        for i in 0..<deleteChildren.count {
+//            try! realm.write {
+//                realm.delete(deleteChildren[i])
+//            }
+//        }
+        //            print("\(s.elapsedTimeString())")
+
+//        "DELETE FROM elf where name like \"%a\""
+//        let deleteElf = realm.objects(elf.self)
+        //        let s = Stopwatch()
+//        for i in 0..<deleteElf.count {
+//            let str = deleteElf[i].name
+//            if str.last == "a" {
+//                print(deleteElf[i].name)
+//                try! realm.write {
+//                    realm.delete(deleteElf[i])
+//                }
+//            }
+//        }
+        //            print("\(s.elapsedTimeString())")
+
+//        for i in 0..<addressItem.count {
 //            for j  in 0..<giftItem.count {
-//                if childrenItem[i].id == giftItem[j].id_children.value {
+//                if addressItem[i].id == giftItem[j].id_address.value {
 //                    try! realm.write {
 //                        //                                print("elf: \(elfItem[i].name) \(reindeerItem[j].name)")
-//                        childrenItem[i].gift.append(giftItem[j])
+//                        addressItem[i].gift.append(giftItem[j])
 //                    }
 //                }
 //            }
 //        }
+                for i in 0..<childrenItem.count {
+                    for j  in 0..<giftItem.count {
+                        if childrenItem[i].id == giftItem[j].id_children.value {
+                            try! realm.write {
+                                //                                print("elf: \(elfItem[i].name) \(reindeerItem[j].name)")
+                                childrenItem[i].gift.append(giftItem[j])
+                            }
+                        }
+                    }
+                }
         
         
     }
