@@ -56,7 +56,7 @@ class area: Object {
     @objc dynamic var id = 0
     @objc dynamic var name: String = ""
     let id_elf = RealmOptional<Int>()
-    let area = List<area>()
+    let address = List<address>()
     
     override static func primaryKey() -> String? {
         return "id"
